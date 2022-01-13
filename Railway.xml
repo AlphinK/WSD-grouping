@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="CH.xsl"?>
+<Railway  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="CHC.xsd">
+    <menu>
+        <train id="t101">
+            <from>New delhi</from>
+            <to>kannur</to>
+            <tname>  IRCTC TEJAS EXP </tname>
+            <SAA>320</SAA>
+            <SA>1250</SA>
+            <SLA> 220</SLA>
+            <SL>1783</SL>
+        </train>
+
+        <train id="t102">
+            <from>Agnomi</from>
+            <to>Ajanti</to>
+            <tname>  SHRIRAM KEERTHI EXP </tname>
+            <SAA>320</SAA>
+            <SA>1250</SA>
+            <SLA> 220</SLA>
+            <SL>1783</SL>
+        </train>
+
+
+         <train id="t103">
+            <from>Nort Bengal</from>
+            <to>Goa</to>
+            <tname>  ANVT REWA EXP </tname>
+            <SAA>45</SAA>
+            <SA>950</SA>
+            <SLA> 250</SLA>
+            <SL>839</SL>
+        </train>
+         <train id="t104">
+            <from>Lucknow</from>
+            <to>West Bengal</to>
+            <tname>  VIKRAMSHILA EXP </tname>
+            <SAA> 800</SAA>
+            <SA>250</SA>
+            <SLA> 74</SLA>
+            <SL>1483</SL>
+        </train>
+         <train id="t105">
+            <from>New delhi</from>
+            <to>Odisha</to>
+            <tname>  NANDANKANAN EXP </tname>
+            <SAA> 226</SAA>
+            <SA>1950</SA>
+            <SLA> 50</SLA>
+            <SL>2783</SL>
+        </train>
+         <train id="t106">
+            <from>Andhra Pradesh</from>
+            <to>Kerala</to>
+            <tname>  JHARKHAND EXP </tname>
+            <SAA> 10</SAA>
+            <SA>350</SA>
+            <SLA> 30</SLA>
+            <SL>183</SL>
+        </train>
+         <train id="t107">
+            <from>Gujarat</from>
+            <to>Chennai</to>
+            <tname>  BIHAR S KRANTI </tname>
+            <SAA> 500</SAA>
+            <SA>90</SA>
+            <SLA> 65</SLA>
+            <SL>873</SL>
+        </train>
+         <train id="t108">
+            <from>Jaipur</from>
+            <to>Kannur</to>
+            <tname>  PURUSHOTTAM EXP </tname>
+            <SAA> 300</SAA>
+            <SA>150</SA>
+            <SLA> 450</SLA>
+            <SL>783</SL>
+        </train>
+    </menu>
+
+</Railway>
