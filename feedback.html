@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+/* Style all input fields */
+input[type=text],[type=password],[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+textarea
+{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 60%;
+  height: 30%;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+ padding-left: 25%;
+ padding-top: 5%;
+
+  
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+span
+        {
+            display: block;
+            margin-left: 20px;
+            color: red;
+            font-style: italic;
+        }
+
+h1
+{
+  margin-left: 40%;
+  color: black;
+}
+li {
+      list-style: none;
+}
+
+:root {
+  --form-control-color: rebeccapurple;
+}
+.login-box
+{
+ 
+ margin-left: 25%;
+  margin-right: 25%;
+  background-color: #4762B6;
+  border: 1px solid black;
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+
+  #button {
+        display: inline-block;
+        background-color: #7b38d8;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+     
+      #button:hover {
+        background-color: #f7c2f9;
+      }
+      
+
+#sd11
+{
+  margin-left: 15%;
+  margin-top: 2%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd2
+{
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 1%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd3
+{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -3.5%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd4
+{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -1%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd5
+{
+  position: absolute;
+  margin-left: 45%;
+  margin-top: -5%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd6
+{
+ position: absolute;
+  margin-left: 45%;
+  margin-top: -3%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd7
+{
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -9%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd8
+{
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -7%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sd9
+{
+  position: absolute;
+  margin-left: 75%;
+  margin-top: -7%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#sdA
+{
+  position: absolute;
+  margin-left: 75%;
+  margin-top: -5%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#sdB
+{
+  position: absolute;
+  margin-left: 75%;
+  margin-top: -5%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <select id="demo" onchange="show()">
+        <option value="select color">select color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+
+<h1>FEEDBACK FORM</h1>
+<div class="login-box">
+<div class="container">
+  <form action="12222.html">
+    
+    <input id="uname" placeholder="Username" onkeypress="return test(event)" placeholder="UserName" type="text"/>
+        <label id="lbuser" style="color: red; visibility: hidden;">Invalid User</label><br><br>
+
+    
+    <input type="password" placeholder="password" id="psw" name="psw"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" required><br><br>
+    
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="special" class="invalid">A <b>special</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
+ 
+ <textarea id="add" placeholder="Address" height="5" width="50"></textarea><br><br>
+ 
+ 
+ <input placeholder="Email" type="email" name="email" id="email" required/><br><br>
+ <span></span><br>
+ 
+ <br><br>
+ <textarea id="coach" height="5" width="50" placeholder="What do you have to say about our coaches:"></textarea>
+ <br>
+ How was your train ride experience<br><br>
+ <ul>
+ <li><input type="radio" name="iu">Bad</li>
+ <li><input type="radio" name="iu">okay</li>
+ <li><input type="radio" name="iu">Good</li>
+ <li><input type="radio" name="iu">Excellent</li>
+ </ul>
+ <br>
+ Comment<br><br>
+ <textarea id="comm" height="5" width="50"></textarea><br>
+ <input id="button" type="submit"  value="Submit">
+ <input id="button" type="reset" value="Reset">
+  </form>
+</div>
+</div>	
+<button id="sd11" onclick="setCookie('user', 'uname')" type="submit">set Cookie Username</button>
+<br>
+<button id="sd2" onclick="displayCookieValue('user')" type="button">display Cookie Username</button>
+<br>
+<button id="sdB" onclick="deleteAllCookies('color')" type="button">delete Cookie color</button>
+<br>
+<button id="sd3" onclick="setCookie('email', 'email')" type="button">set Cookie email</button>
+<br>
+<button id="sd4" onclick="displayCookieValue('email')" type="button">display Cookie email</button>
+<br>
+<button id="sd5" onclick="setCookie('address', 'add')" type="button">set Cookie address</button>
+<br>
+<button id="sd6" onclick="displayCookieValue('address')" type="button">display Cookie address</button>
+<br>
+<button id="sd9" onclick="return saveData();" type="button">save data in Session storage</button>
+<br>
+<button id="sdA" onclick="return saveData1();" type="button">save data in Local storage</button>
+<br>
+<button id="sd7"  onclick="setCookie('color', 'demo')" type="submit">set Cookie color</button>
+<br>
+<button id="sd8" onclick="displayCookieValue('color')" type="button">display Cookie color</button>
+
+
+
+<div id="value"></div>
+
+<script>
+
+function saveData() { 
+  window.sessionStorage
+  var input = document.getElementById("comm");
+  sessionStorage.setItem("comm", input.value);
+  console.log(input);
+} 
+ 
+
+function saveData1() { 
+  window.localStorage
+  var input = document.getElementById("coach");
+  localStorage.setItem("local_storage", input.value);
+  console.log(input);
+} 
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var special =document.getElementById("special");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) 
+  {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else 
+  {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) 
+  {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+
+  // Validate length
+  if(myInput.value.length >= 8) 
+  {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } 
+  else 
+  {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+
+//validate special
+  var specials =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+  if(myInput.value.match(specials))
+  {
+    special.classList.remove("invalid");
+    special.classList.add("valid");
+  }
+  else
+  {
+    special.classList.remove("valid");
+    special.classList.add("invalid");
+  }
+}
+
+var email=document.getElementById('email');
+var span=document.getElementsByTagName('span');  
+
+email.onkeydown = function()
+{
+   const regex1 = /[a-z0-9]+@(christuniversity.in)/;
+   
+   if(regex1.test(email.value))
+   {
+     span[0].innerText = "Your Email is Valid";
+     span[0].style.color = "lime";  
+   }
+   else
+   {
+       span[0].innerText="Invalid Email Id";
+       span[0].style.color="red";
+   }
+}
+
+function test(event)
+        {
+            let code=event.which;
+            if(code>47&&code<58)
+            return false;
+            else
+            return true;
+        }
+        var today = new Date();
+        var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
+
+        function setCookie(name, id) {
+            var element = document.getElementById(id);
+            var elementValue = escape(element.value);
+
+            document.cookie = name + "=" + elementValue  + "; path=/; expires=" + expiry.toGMTString();;
+            console.log(document.cookie);
+        }
+
+        function storeValues(form) {
+            setCookie("email", form.email - field.value);
+            return true;
+        }
+
+        function displayCookieValue(name) {
+            var value = getCookie(name);
+            var element = document.getElementById("value");
+            element.innerHTML = "Cookie name: "+ name + ", value " + value;
+
+        }
+
+        function getCookie(name) {
+            var re = new RegExp(name + "=([^;]+)");
+            var value = re.exec(document.cookie);
+            return (value != null) ? unescape(value[1]) : null;
+        }
+        window.onload = function () {
+          if(document.cookie.length != 0) {
+              var nameValueArray = document.cookie.split("=");
+              document.bgColor = nameValueArray[1];
+              document.getElementById("ddlTheme").value = nameValueArray[1];
+          }
+      }
+      function show()
+        {
+          var value1 = document.getElementById('demo').value;
+          if(value1!="select color")
+          {
+            document.bgColor = value1;
+            document.cookie="color="+value1;
+          }
+        }
+        window.onload=function()
+        {
+          if(document.cookie.length!=0)
+          {
+            var a=document.cookie.split("=");
+            document.getElementById("demo").value1 = a[1];
+            document.bgColor=a[1];
+          }
+        }
+        function deleteAllCookies(name) {
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+
+</script>
+
+</body>
+</html>
