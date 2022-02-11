@@ -1,50 +1,50 @@
 [
     {
-        "id": "A",
-        "sname": "Lokesh",
-        "sclass": "2 Wheeler",
-        "fee": 10000
+        "id": "BIHAR S KRANTI",
+        "sname": "Allahabad Junction Railway Station (ALD)",
+        "sclass": "Kharagpur Junction Railway Station (KGP)",
+        "fee": 45
     },
     {
-        "id": 2,
-        "sname": "Raman",
-        "sclass": "4 Wheeler",
-        "fee": 20000
+        "id": "PURUSHOTTAM EXP",
+        "sname": "Patna Junction Railway Station (PNBE)",
+        "sclass": "Chennai Central Railway Station (MAS)",
+        "fee": 32
     },
     {
-        "id": 3,
-        "sname": "Murukan",
-        "sclass": "2 Wheeler",
-        "fee": 30000
+        "id": "NANDANKANAN EXP",
+        "sname": "Chhatrapati Shivaji Terminus (CST)",
+        "sclass": "Kanpur Central Railway Station (CNB)",
+        "fee": 71
     },
     {
-        "id": 4,
-        "sname": "Karthikeyan",
-        "sclass": "4 Wheeler",
-        "fee": 40000
+        "id": "Kanpur Central Railway Station (CNB)",
+        "sname": "New Delhi Railway Station (NDLS)",
+        "sclass": "Kharagpur Junction Railway Station (KGP)",
+        "fee": 16
     },
     {
-        "id": 5,
-        "sname": "Vignesh",
-        "sclass": "2 Wheeler",
-        "fee": 50000
+        "id": "Maharajas' Express",
+        "sname": "Kharagpur Junction Railway Station (KGP)",
+        "sclass": "Ahmedabad Junction Railway Station (ADI)",
+        "fee": 44
     },
     {
-        "id": 6,
-        "sname": "Kumar",
-        "sclass": "2 Wheeler",
-        "fee": 30000
+        "id": "The Deccan Odyssey",
+        "sname": "Kanpur Central Railway Station (CNB)",
+        "sclass": "Allahabad Junction Railway Station (ALD)",
+        "fee": 112
     },
     {
-        "id": 7,
-        "sname": "Deshayi",
-        "sclass": "4 Wheeler",
-        "fee": 40000
+        "id": "The Golden Chariot",
+        "sname": "Sealdah Railway Station (SDAH)",
+        "sclass": "Patna Junction Railway Station (PNBE)",
+        "fee": 55
     },
     {
-        "id": 8,
-        "sname": "Manikya",
-        "sclass": "2 Wheeler",
-        "fee": 50000
+        "id": "Palaces on Wheels",
+        "sname": "Howrah Junction Railway Station (HWH)",
+        "sclass": "Chhatrapati Shivaji Terminus (CST)",
+        "fee": 63
     }
 ]
