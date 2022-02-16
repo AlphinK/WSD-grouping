@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "trainline";
+  src: url("TLCircular-Titling.eot");
+  src: url("TLCircular-Titling.eot#iefix") format("embedded-opentype"),
+  url("TLCircular-Titling.woff") format("woff"),
+  url("TLCircular-Titling.ttf") format("truetype"),
+  url("TLCircular-Titling.svg#TLCircularTitling") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("TLCircular-Book.eot");
+  src: url("TLCircular-Book.eot#iefix") format("embedded-opentype"),
+  url("TLCircular-Book.woff") format("woff"),
+  url("TLCircular-Book.ttf") format("truetype"),
+  url("TLCircular-Book.svg#TLCircularBook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("TLCircular-Bold.eot");
+  src: url("TLCircular-Bold.eot#iefix") format("embedded-opentype"),
+  url("TLCircular-Bold.woff") format("woff"),
+  url("TLCircular-Bold.ttf") format("truetype"),
+  url("TLCircular-Bold.svg#TLCircularBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}

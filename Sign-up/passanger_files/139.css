@@ -1,0 +1,477 @@
+.Alert-module__root {
+  border-radius: var(--border-radius-r4);
+  background: none;
+  border: 1px solid;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.Alert-module__fullWidth {
+  width: 100%;
+}
+
+.Alert-module__negative {
+  border-color: var(--dp_app_negative_mid);
+  background-color: var(--dp_app_negative_lightest);
+}
+
+.Alert-module__warning {
+  border-color: var(--dp_app_warning_mid);
+  background-color: var(--dp_app_warning_lightest);
+}
+
+.Alert-module__positive {
+  border-color: var(--dp_app_positive_mid);
+  background-color: var(--dp_app_positive_lightest);
+}
+
+.Alert-module__info {
+  border-color: var(--dp_app_info_mid);
+  background-color: var(--dp_app_info_lightest);
+}
+
+.Alert-module__compact {
+  border-left-width: var(--spacing-spacer_2);
+  padding: var(--spacing-spacer_4);
+}
+
+.TextLink-module__root {
+  cursor: pointer;
+  border-radius: var(--spacing-spacer_1);
+
+  /* ! fleet components reset */
+  border-bottom: 0
+}
+
+.TextLink-module__root:hover {
+    text-decoration: underline;
+  }
+
+.TextLink-module__root:focus,
+  .TextLink-module__root:focus:not(:active) {
+    outline: none;
+    box-shadow: 0 0 0 var(--spacing-spacer_1) var(--dp_comp_focus_ring);
+  }
+
+.TextLink-module__root {
+
+  /* stylelint-disable-next-line no-descending-specificity */
+}
+
+.TextLink-module__root:visited:active,
+    .TextLink-module__root:visited:focus,
+    .TextLink-module__root:visited:focus:not(:active) {
+      outline: none;
+      box-shadow: 0 0 0 var(--spacing-spacer_1) var(--dp_comp_focus_ring);
+    }
+
+.TextLink-module__defaultColor {
+  color: var(--dp_app_link_base)
+}
+
+.TextLink-module__defaultColor:hover {
+    color: var(--dp_app_link_hover);
+  }
+
+.TextLink-module__defaultColor:active {
+    color: var(--dp_app_link_pressed);
+  }
+
+.TextLink-module__defaultColor:focus,
+  .TextLink-module__defaultColor:focus:not(:active) {
+    color: var(--dp_app_link_hover);
+  }
+
+.TextLink-module__defaultColor {
+
+  /* stylelint-disable-next-line no-descending-specificity */
+}
+
+.TextLink-module__defaultColor:visited:hover {
+      color: var(--dp_app_link_visited_hover);
+    }
+
+.TextLink-module__defaultColor:visited:active,
+    .TextLink-module__defaultColor:visited:focus,
+    .TextLink-module__defaultColor:visited:focus:not(:active) {
+      color: var(--dp_app_link_visited_pressed);
+    }
+
+.Backdrop-module__overlay {
+  /* This value should be copied from depot */
+  z-index: 30001;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--dp_app_backdrop_four_darkest);
+  color: var(--dp_app_backdrop_base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: var(--spacing-spacer_6);
+  padding-right: var(--spacing-spacer_6);
+}
+
+.Backdrop-module__logo {
+  margin-bottom: var(--spacing-spacer_3);
+}
+
+.Backdrop-module__logo > svg > path {
+  fill: var(--dp_app_backdrop_base);
+}
+
+.Backdrop-module__logoIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.Backdrop-module__paragraph {
+  margin: var(--spacing-spacer_2) 0;
+  max-width: 500px;
+}
+
+.Backdrop-module__button {
+  margin: var(--spacing-spacer_4)  var(--spacing-spacer_4) 0;
+  color: var(--dp_app_backdrop_base);
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.Backdrop-module__button:hover {
+    color: var(--dp_app_backdrop_base);
+  }
+
+.Footer-module__footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: var(--spacing-spacer_5);
+}
+
+.Footer-module__keepSignedInContainer {
+  margin-top: var(--spacing-spacer_4);
+  outline: none;
+  border-radius: var(--spacing-spacer_1)
+}
+
+.Footer-module__keepSignedInContainer:hover {
+    text-decoration: underline;
+  }
+
+.Footer-module__keepSignedInContainer:focus,
+  .Footer-module__keepSignedInContainer:focus:not(:active) {
+    box-shadow: 0 0 0 var(--spacing-spacer_1) var(--dp_comp_focus_ring);
+  }
+
+.Footer-module__keepSignedIn {
+  color: var(--dp_app_text_subdued);
+  display: flex;
+  align-items: center;
+  cursor: pointer
+}
+
+.Footer-module__keepSignedIn:hover {
+    color: var(--dp_app_text_subdued);
+  }
+
+.Footer-module__keepSignedInDecoration {
+  text-decoration: underline;
+}
+
+.Footer-module__icon {
+  padding-left: var(--spacing-spacer_2);
+
+  /* ! fleet components reset */
+  box-sizing: content-box;
+}
+
+.Footer-module__privacyPolicy {
+  color: var(--dp_app_text_subdued)
+}
+
+.Footer-module__privacyPolicy:hover {
+    color: var(--dp_app_text_subdued);
+  }
+
+.Footer-module__privacyPolicySpacingTop {
+  margin-top: var(--spacing-spacer_3);
+}
+
+.Footer-module__privacyPolicyLinkDecoration {
+  text-decoration: underline
+}
+
+.Footer-module__privacyPolicyLinkDecoration:visited:hover {
+      color: var(--dp_app_text_subdued);
+    }
+
+.Footer-module__privacyPolicyLinkDecoration:visited:active,
+    .Footer-module__privacyPolicyLinkDecoration:visited:focus {
+      color: var(--dp_app_text_subdued);
+    }
+
+.Skeleton-module__root {
+  width: auto;
+  max-width: 300px;
+}
+
+.SocialButton-module__socialButtonIcon {
+  margin-right: var(--spacing-spacer_2);
+  pointer-events: none;
+}
+
+.SocialButtonsStack-module__root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column
+}
+.SocialButtonsStack-module__root li ~ li {
+    margin-top: var(--spacing-spacer_4);
+  }
+.SocialButtonsStack-module__root > li:first-child {
+    margin-top: var(--spacing-spacer_1);
+  }
+
+.typography-module__hero {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+.typography-module__title1 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.typography-module__title2 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.typography-module__title3 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.typography-module__title4 {
+  font-family: SF Pro Text, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.typography-module__large {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px;
+  line-height: 24px;
+}
+.typography-module__body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 24px;
+}
+.typography-module__small {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 15px;
+  line-height: 20px;
+}
+.typography-module__mini {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 20px;
+}
+.typography-module__micro {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (--viewport-M) {
+  .typography-module__hero {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .typography-module__title1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .typography-module__title2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .typography-module__small {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .typography-module__mini {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .typography-module__micro {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.FormField-module__root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.FormField-module__rowLabels {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: var(--spacing-spacer_1);
+}
+
+.FormField-module__label {
+  order: 0;
+  visibility: visible;
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-weight: normal;
+  flex: 1 0 auto;
+}
+
+/* copied from https://www.w3.org/WAI/tutorials/forms/labels/ */
+.FormField-module__labelHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.FormField-module__secondaryLabel {
+  display: flex;
+  text-align: right;
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-weight: normal;
+}
+
+.FormField-module__input {
+  border: 1px solid var(--dp_app_border_base);
+  border-radius: var(--spacing-spacer_1);
+  box-sizing: border-box;
+  padding: var(--spacing-spacer_2) var(--spacing-spacer_3);
+  min-width: 280px;
+  width: 100%;
+  font-weight: 600;
+  color: var(--dp_app_text_base);
+  outline: none
+}
+
+.FormField-module__input::-webkit-credentials-auto-fill-button {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+.FormField-module__input::-ms-reveal,
+  .FormField-module__input::-ms-clear {
+    display: none;
+  }
+
+.FormField-module__input:hover {
+    box-shadow: 0 0 0 1px var(--dp_app_selection_dark);
+  }
+
+.FormField-module__input:focus {
+    border-color: var(--dp_app_selection_darker);
+    box-shadow: 0 0 0 2px var(--dp_app_selection_darker);
+  }
+
+.FormField-module__input.FormField-module__error {
+    border-color: var(--dp_app_negative_mid)
+  }
+
+.FormField-module__input.FormField-module__error:hover {
+      box-shadow: 0 0 0 2px var(--dp_app_negative_dark);
+    }
+
+.FormField-module__input.FormField-module__error:focus {
+      border-color: var(--dp_app_negative_mid);
+      box-shadow: 0 0 0 1px var(--dp_app_negative_mid);
+    }
+
+.FormField-module__inputContainer {
+  order: 1;
+  flex: 1 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.FormField-module__validationError {
+  flex: 1 0 auto;
+  outline: none;
+  order: 1;
+  margin-top: var(--spacing-spacer_1);
+}
+
+.TogglePasswordVisibility-module__root {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--spacing-spacer_1);
+  z-index: 1;
+  font-weight: normal;
+  font-size: var(--spacing-spacer_3);
+  margin: 0;
+  padding-top: var(--spacing-spacer_1);
+  padding-bottom: var(--spacing-spacer_1);
+}
+
+.SignInEmailForm-module__formFieldContainer {
+  margin-bottom: var(--spacing-spacer_4);
+}
+
+.SignInEmailForm-module__secondaryLabel {
+  text-decoration: none;
+}
+
+.SignIn-module__root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.SignIn-module__socialButtonStackMargin,
+ul.SignIn-module__socialButtonStackMargin {
+  margin-bottom: var(--spacing-spacer_4);
+}
+

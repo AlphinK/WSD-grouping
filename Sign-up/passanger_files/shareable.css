@@ -1,0 +1,23 @@
+:root {
+  --spacing-spacer_1: 4px;
+  --spacing-spacer_2: 8px;
+  --spacing-spacer_3: 12px;
+  --spacing-spacer_4: 16px;
+  --spacing-spacer_5: 24px;
+  --spacing-spacer_6: 32px;
+  --spacing-spacer_7: 40px;
+  --spacing-spacer_8: 48px;
+  --spacing-spacer_9: 64px;
+  --spacing-spacer_10: 80px;
+  --spacing-spacer_11: 96px;
+}
+
+:root {
+  --border-radius-r2: 2px;
+  --border-radius-r4: 4px;
+  --border-radius-r8: 8px;
+  --border-radius-r12: 12px;
+  --border-radius-r16: 16px;
+  --border-radius-r20: 20px;
+}
+
